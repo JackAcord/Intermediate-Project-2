@@ -1,0 +1,491 @@
+var color1 = Chart.helpers.color;
+        var scatterChartData1 = {
+            datasets: [{
+                borderColor: window.chartColors.red,
+                backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+                data: [{ //Data for scatterpoint and scattergraph charts has to be entered without a label in chart.js
+                    x: 2,
+                    y: 4,
+                }, {
+                    x: 2,
+                    y: 4,
+                }, {
+                    x: 2,
+                    y: 2,
+                }, {
+                    x: 2,
+                    y: 5,
+                }, {
+                    x: 1,
+                    y: 4,
+                }, {
+                    x: 2,
+                    y: 4,
+                }, {
+                    x: 1,
+                    y: 5,
+                }, {
+                    x: 1,
+                    y: 5,
+                }, {
+                    x: 2,
+                    y: 2,
+                }, {
+                    x: 1,
+                    y: 7,
+                }]
+            }]
+        };
+
+        window.onload = function() {
+            var ctx1 = document.getElementById("playersScatterpoint").getContext("2d");
+            window.myScatter1 = Chart.Scatter(ctx, {
+                data: scatterChartDat1,
+                options: {
+                    xAxes: [{
+                    scaleLabel: { //This puts a label onto the x axis
+                        display: true,
+                        labelString: 'Minimum Number of Players'
+                     }
+                }],
+                    yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Maximum Number of Players'
+                     }
+                }],
+                    title: {
+                        display: true,
+                        text: 'Minimum and Maximum Number of Players'
+                    },
+                }
+            });
+        };
+
+var color2 = Chart.helpers.color;
+        var scatterChartData2 = {
+            datasets: [{
+                borderColor: window.chartColors.red,
+                backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+                data: [{
+                    x: 2,
+                    y: 4,
+                }, {
+                    x: 2,
+                    y: 4,
+                }, {
+                    x: 2,
+                    y: 2,
+                }, {
+                    x: 2,
+                    y: 5,
+                }, {
+                    x: 1,
+                    y: 4,
+                }, {
+                    x: 2,
+                    y: 4,
+                }, {
+                    x: 1,
+                    y: 5,
+                }, {
+                    x: 1,
+                    y: 5,
+                }, {
+                    x: 2,
+                    y: 2,
+                }, {
+                    x: 1,
+                    y: 7,
+                }]
+            }]
+        };
+
+        window.onload = function() {
+            var ctx2 = document.getElementById("playersScattergraph").getContext("2d");
+            window.myScatter2 = Chart.Scatter(ctx, {
+                data: scatterChartData2,
+                options: {
+                    showLine: true, //This adds a line into the mix to make it a scatter"graph"
+
+                    xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Minimum Number of Players'
+                     }
+                }],
+                    yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Maximum Number of Players'
+                     }
+                }],
+                    title: {
+                        display: true,
+                        text: 'Minimum and Maximum Number of Players'
+                    },
+                }
+            });
+        };
+
+var color4 = Chart.helpers.color;
+        var scatterChartData4 = {
+            datasets: [{
+                borderColor: window.chartColors.red,
+                backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+                data: [{
+                    x: 60,
+                    y: 60,
+                }, {
+                    x: 180,
+                    y: 240,
+                }, {
+                    x: 180,
+                    y: 180,
+                }, {
+                    x: 60,
+                    y: 150,
+                }, {
+                    x: 90,
+                    y: 150,
+                }, {
+                    x: 180,
+                    y: 240,
+                }, {
+                    x: 90,
+                    y: 115,
+                }, {
+                    x: 90,
+                    y: 120,
+                }, {
+                    x: 30,
+                    y: 30,
+                }, {
+                    x: 30,
+                    y: 210,
+                }]
+            }]
+        };
+
+        window.onload = function() {
+            var ctx4 = document.getElementById("gameTimeScatterpoint").getContext("2d");
+            window.myScatter4 = Chart.Scatter(ctx, {
+                data: scatterChartData4,
+                options: {
+                    xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Minimum Game Time'
+                     }
+                }],
+                    yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Maximum Game Time'
+                     }
+                }],
+                    title: {
+                        display: true,
+                        text: 'Minimum and Maximum Game Time'
+                    },
+                }
+            });
+        };
+
+var color5 = Chart.helpers.color;
+        var scatterChartData5 = {
+            datasets: [{
+                borderColor: window.chartColors.red,
+                backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+                data: [{
+                    x: 60,
+                    y: 60,
+                }, {
+                    x: 180,
+                    y: 240,
+                }, {
+                    x: 180,
+                    y: 180,
+                }, {
+                    x: 60,
+                    y: 150,
+                }, {
+                    x: 90,
+                    y: 150,
+                }, {
+                    x: 180,
+                    y: 240,
+                }, {
+                    x: 90,
+                    y: 115,
+                }, {
+                    x: 90,
+                    y: 120,
+                }, {
+                    x: 30,
+                    y: 30,
+                }, {
+                    x: 30,
+                    y: 210,
+                }]
+            }]
+        };
+
+        window.onload = function() {
+            var ctx5 = document.getElementById("gameTimeScattergraph").getContext("2d");
+            window.myScatter5 = Chart.Scatter(ctx, {
+                data: scatterChartData5,
+                options: {
+                    showLine: true,
+
+                    xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Minimum Game Time'
+                     }
+                }],
+                    yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Maximum Game Time'
+                     }
+                }],
+                    title: {
+                        display: true,
+                        text: 'Minimum and Maximum Game Time'
+                    },
+                }
+            });
+        };
+
+var ctx7 = document.getElementById('yearsRating').getContext('2d');
+var myChart7 = new Chart(ctx, {
+    type: 'line',
+
+    data: {
+        labels: ["Pandemic Legacy: Season 1", "Through the Ages: A New Story of Civilization", "Twilight Struggle", "Terra Mystica", "Gloomhaven", "Star Wars: Rebellion", "Scythe", "Terraforming Mars", "7 Wonders Duel", "Caverna: The Cave Farmers"], //the list of items being catagorized
+        datasets: [{
+            label: "Average Rating",
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            fill: false,
+            data: [8.67, 8.73, 8.36, 8.3, 9.09, 8.53, 8.32, 8.38, 8.19, 8.18], //line one data
+            yAxisID: "y-axis-1",
+        }, {
+            label: "Year",
+            backgroundColor: 'rgb(45, 167, 39)',
+            borderColor: 'rgb(45, 167, 39)',
+            fill: false,
+            data: [2015, 2015, 2005, 2012, 2017, 2016, 2016, 2016, 2015, 2013], //line two data
+            yAxisID: "y-axis-2"
+        }]
+    },
+
+            options: {
+                responsive: true,
+                hoverMode: 'index',
+                stacked: false,
+                title:{
+                    display: true,
+                    text:'Average Rating vs. Year of Release' //The title of the graph
+                },
+                scales: {
+                    yAxes: [{
+                        type: "linear",
+                        display: true,
+                        position: "left",
+                        id: "y-axis-1",
+                    }, {
+                        type: "linear",
+                        display: true,
+                        position: "right",
+                        id: "y-axis-2",
+
+                        gridLines: {
+                            drawOnChartArea: false,
+                        },
+                    }],
+                }
+            }
+        });
+
+var ctx8 = document.getElementById('averageGeekRating').getContext('2d');
+var myChart8 = new Chart(ctx, {
+    type: 'line',
+
+    data: {
+        labels: ["Pandemic Legacy: Season 1", "Through the Ages: A New Story of Civilization", "Twilight Struggle", "Terra Mystica", "Gloomhaven", "Star Wars: Rebellion", "Scythe", "Terraforming Mars", "7 Wonders Duel", "Caverna: The Cave Farmers"],
+        datasets: [{
+            label: "Average Rating",
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            fill: false,
+            data: [8.67, 8.73, 8.36, 8.3, 9.09, 8.53, 8.32, 8.38, 8.19, 8.18],
+            yAxisID: "y-axis-1",
+        }, {
+            label: "Geek Rating",
+            backgroundColor: 'rgb(45, 167, 39)',
+            borderColor: 'rgb(45, 167, 39)',
+            fill: false,
+            data: [8.49, 8.31, 8.22, 8.15, 8.15, 8.15, 8.09, 8.06, 8.02, 8.01],
+            yAxisID: "y-axis-2"
+        }]
+    },
+
+            options: {
+                responsive: true,
+                hoverMode: 'index',
+                stacked: false,
+                title:{
+                    display: true,
+                    text:'Average Rating vs. Geek (User) Rating'
+                },
+                scales: {
+                    yAxes: [{
+                        type: "linear",
+                        display: true,
+                        position: "left",
+                        id: "y-axis-1",
+                    }, {
+                        type: "linear",
+                        display: true,
+                        position: "right",
+                        id: "y-axis-2",
+
+                        gridLines: {
+                            drawOnChartArea: false,
+                        },
+                    }],
+                }
+            }
+        });
+
+var ctx9 = document.getElementById('ratingsVoteNo').getContext('2d');
+var myChart9 = new Chart(ctx, {
+    type: 'line',
+
+    data: {
+        labels: ["Pandemic Legacy: Season 1", "Through the Ages: A New Story of Civilization", "Twilight Struggle", "Terra Mystica", "Gloomhaven", "Star Wars: Rebellion", "Scythe", "Terraforming Mars", "7 Wonders Duel", "Caverna: The Cave Farmers"],
+        datasets: [{
+            label: "Average Rating",
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            fill: false,
+            data: [8.67, 8.73, 8.36, 8.3, 9.09, 8.53, 8.32, 8.38, 8.19, 8.18],
+            yAxisID: "y-axis-1",
+        }, {
+            label: "Number of Votes",
+            backgroundColor: 'rgb(45, 167, 39)',
+            borderColor: 'rgb(45, 167, 39)',
+            fill: false,
+            data: [18009, 7309, 27403, 24267, 3978, 8696, 16199, 9749, 21195, 17198],
+            yAxisID: "y-axis-2"
+        }]
+    },
+
+            options: {
+                responsive: true,
+                hoverMode: 'index',
+                stacked: false,
+                title:{
+                    display: true,
+                    text:'Average Rating vs. Number of Votes'
+                },
+                scales: {
+                    yAxes: [{
+                        type: "linear",
+                        display: true,
+                        position: "left",
+                        id: "y-axis-1",
+                    }, {
+                        type: "linear",
+                        display: true,
+                        position: "right",
+                        id: "y-axis-2",
+
+                        gridLines: {
+                            drawOnChartArea: false,
+                        },
+                    }],
+                }
+            }
+        });
+
+var ctx10 = document.getElementById('overallGames').getContext('2d');
+var color = Chart.helpers.color; //helps organize by color
+    var config = {
+        type: 'radar',
+        data: {
+            labels: ["Age", ["Average", "Game", "Rating"], ["Max", "Number of", "Players"], ["Average", "Game Time"], ["Year of", "Release"], //the labels for the radar graph
+            datasets: [{
+                label: "Pandemic Legacy: Season 1",
+                backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+                borderColor: window.chartColors.red,
+                pointBackgroundColor: window.chartColors.red,
+                data: [13, 8.67, 4, 60, 2015] //goes to each part of the radar graph
+            }, {
+                label: "Through the Ages: A New Story of Civilization",
+                backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+                borderColor: window.chartColors.blue,
+                pointBackgroundColor: window.chartColors.blue,
+                data: [14, 8.73, 4, 240, 2015]
+            }, {
+                label: "Twilight Struggle",
+                backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
+                borderColor: window.chartColors.yellow,
+                pointBackgroundColor: window.chartColors.yellow,
+                data: [13, 8.36, 2, 180, 2005]
+            }, {
+                label: "Terra Mystica",
+                backgroundColor: color(window.chartColors.green).alpha(0.2).rgbString(),
+                borderColor: window.chartColors.green,
+                pointBackgroundColor: window.chartColors.green,
+                data: [12, 8.3, 5, 150, 2012]
+            }, {
+                label: "Gloomhaven",
+                backgroundColor: color(window.chartColors.orange).alpha(0.2).rgbString(),
+                borderColor: window.chartColors.orange,
+                pointBackgroundColor: window.chartColors.orange,
+                data: [12, 9.09, 4, 150, 2017]
+            }, {
+                label: "Star Wars: Rebellion",
+                backgroundColor: color(window.chartColors.black).alpha(0.2).rgbString(),
+                borderColor: window.chartColors.black,
+                pointBackgroundColor: window.chartColors.black,
+                data: [14, 8.53, 4, 240, 2016]
+            }, {
+                label: "Scythe",
+                backgroundColor: color(window.chartColors.purple).alpha(0.2).rgbString(),
+                borderColor: window.chartColors.purple,
+                pointBackgroundColor: window.chartColors.purple,
+                data: [14, 8.32, 5, 115, 2016]
+            }, {
+                label: "Terraforming Mars",
+                backgroundColor: color(window.chartColors.brown).alpha(0.2).rgbString(),
+                borderColor: window.chartColors.brown,
+                pointBackgroundColor: window.chartColors.brown,
+                data: [12, 8.38, 5, 120, 2016]
+            }, {
+                label: "7 Wonders Duel",
+                backgroundColor: color(window.chartColors.pink).alpha(0.2).rgbString(),
+                borderColor: window.chartColors.pink,
+                pointBackgroundColor: window.chartColors.pink,
+                data: [10, 8.19, 2, 30, 2015]
+            }, {
+                label: "Caverna: The Cave Farmers",
+                backgroundColor: color(window.chartColors.grey).alpha(0.2).rgbString(),
+                borderColor: window.chartColors.grey,
+                pointBackgroundColor: window.chartColors.grey,
+                data: [12, 8.18, 7, 210, 2013]
+            },]
+        },
+        options: {
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Overall Game Chart'
+            }
+        }
+    };
