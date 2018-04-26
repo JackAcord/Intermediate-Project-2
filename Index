@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jack Acord - Project 3</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topnav">
+  <a id="playersScatterpoint">Players (Scatterpoint)</a>
+  <a id="playersScattergraph">Players (Scattergraph)</a>
+  <a id="averageTime">Average Time</a>
+  <a id="gameTimeScatterpoint">Game Time (Scatterpoint)</a>
+  <a id="gameTimeScattergraph">Game Time (Scattergraph)</a>
+  <a id="years">Years</a>
+  <a id="yearsRating">Year to Rating</a>
+  <a id="averageGeekRating">Average and Geek Ratings</a>
+  <a id="ratingVoteNo">Rating to Vote Numbers</a>
+  <a id="overallGames">Overall Game Chart</a>
+</div>
+<div class="main">
+<canvas id="playersScatterpoint"></canvas>
+<canvas id="playersScattergraph"></canvas>
+<canvas id="averageTime">
+<h1>30 Minutes</h1>
+<img src="Project 3B/chesspiece.png">
+<h1>60 Minutes</h1>
+<img src="Project 3B/chesspiece.png">
+<h1>115 Minutes</h1>
+<img src="Project 3B/chesspiece.png">
+<h1>120 Munutes</h1>
+<img src="Project 3B/chesspiece.png">
+<h1>150 Minutes</h1>
+<img src="Project 3B/chesspiece.png">
+<img src="Project 3B/chesspiece.png">
+<h1>180 Minutes</h1>
+<img src="Project 3B/chesspiece.png">
+<h1>210 Minutes</h1>
+<img src="Project 3B/chesspiece.png">
+<h1>240 Minutes</h1>
+<img src="Project 3B/chesspiece.png">
+<img src="Project 3B/chesspiece.png">
+</canvas>
+<canvas id="gameTimeScatterpoint"></canvas>
+<canvas id="gameTimeScattergraph"></canvas>
+<canvas id="years">
+<h1>2005: 1</h1>
+<img src="Project 3B/chesspiece.png">
+<h1>2012: 1</h1>
+<img src="Project 3B/chesspiece.png">
+<h1>2013: 1</h1>
+<img src="Project 3B/chesspiece.png">
+<h1>2015: 3</h1>
+<img src="Project 3B/chesspiece.png">
+<img src="Project 3B/chesspiece.png">
+<img src="Project 3B/chesspiece.png">
+<h1>2016: 3</h1>
+<img src="Project 3B/chesspiece.png">
+<img src="Project 3B/chesspiece.png">
+<img src="Project 3B/chesspiece.png">
+<h1>2017: 1</h1>
+<img src="Project 3B/chesspiece.png">
+</canvas>
+<canvas id="yearsRating"></canvas>
+<canvas id="averageGeekRating"></canvas>
+<canvas id="ratingVoteNo"></canvas>
+<canvas id="overallGames"></canvas>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
